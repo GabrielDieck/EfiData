@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Clientes": {
+      "commandName": "Project"
+    },
+    "Perfil 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\gabri\\source\\repos\\Clientes\\Clientes\\!Busqueda.cs"
+    }
+  }
+}
