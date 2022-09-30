@@ -11,7 +11,7 @@ namespace Clientes
     {
         public static SqlConnection ObtenerConexion()
         {
-            SqlConnection conn = new SqlConnection("Data source=DESKTOP-3AU5ED1\\SERVER_PROYEC; Initial Catalog=BDClientes; User Id=Comun; Password=password");
+            SqlConnection conn = new SqlConnection("Data source=192.168.0.20; Initial Catalog=BDClientes; User Id=Comun; Password=password");
             conn.Open();
 
             return conn;
