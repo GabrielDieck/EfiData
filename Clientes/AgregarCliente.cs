@@ -79,5 +79,10 @@ namespace Clientes
             Registro_Usuarios RegistroUsuarios = new Registro_Usuarios();
             RegistroUsuarios.Show();
         }
+
+        private void Regis_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

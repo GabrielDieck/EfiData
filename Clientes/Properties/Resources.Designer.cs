@@ -59,5 +59,25 @@ namespace Clientes.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallhaven_g8zj6l {
+            get {
+                object obj = ResourceManager.GetObject("wallhaven-g8zj6l", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallhaven_p23v1j {
+            get {
+                object obj = ResourceManager.GetObject("wallhaven-p23v1j", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
