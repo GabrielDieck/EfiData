@@ -34,5 +34,10 @@ namespace Clientes
         {
             this.Close();
         }
+
+        private void Autentificacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
