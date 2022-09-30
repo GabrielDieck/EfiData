@@ -156,6 +156,7 @@
             this.MaximumSize = new System.Drawing.Size(800, 300);
             this.MinimumSize = new System.Drawing.Size(800, 300);
             this.Name = "Busqueda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de Clientes";
             this.Load += new System.EventHandler(this.Busqueda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).EndInit();

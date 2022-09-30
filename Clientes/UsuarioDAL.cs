@@ -23,5 +23,29 @@ namespace Clientes
 
         }
 
+        public static int Autentificar(String pUsuarios, String pContraseña)
+        {
+
+            int resultado = -1;
+
+            SqlConnection conexion = BDComun.ObtenerConexion();
+
+            SqlCommand comando = new SqlCommand(string.Format("Select * From Usuarios Where Nombre = '{0}' and PwdCompare('{1}',Contraseña) = 1", pUsuarios, pContraseña), conexion);
+
+            SqlDataReader reader = comando.ExecuteReader();
+
+            while (reader.Read())
+            {
+
+                resultado = 50;
+
+            }
+
+            conexion.Close();
+            return resultado;
+
+        }
+
+
     }
 }
