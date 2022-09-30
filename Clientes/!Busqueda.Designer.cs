@@ -101,13 +101,14 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(16, 222);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 29);
             this.button2.TabIndex = 8;
             this.button2.Text = "Aceptar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3

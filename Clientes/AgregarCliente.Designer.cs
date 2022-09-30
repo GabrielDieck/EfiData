@@ -42,6 +42,7 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -119,7 +120,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(11, 437);
+            this.label5.Location = new System.Drawing.Point(10, 437);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(233, 15);
             this.label5.TabIndex = 8;
@@ -159,13 +160,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(345, 96);
+            this.button1.Location = new System.Drawing.Point(316, 75);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(167, 30);
             this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
+            this.button1.Text = "Busqueda de Clientes";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(355, 111);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 30);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Crear Usuario";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Regis
             // 
@@ -175,6 +186,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCerrar);
@@ -216,5 +228,6 @@
         private Button btnCerrar;
         private Label label6;
         private Button button1;
+        private Button button2;
     }
 }

@@ -73,5 +73,11 @@ namespace Clientes
             Busqueda pBusqueda = new Busqueda();
             pBusqueda.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Registro_Usuarios RegistroUsuarios = new Registro_Usuarios();
+            RegistroUsuarios.Show();
+        }
     }
 }
