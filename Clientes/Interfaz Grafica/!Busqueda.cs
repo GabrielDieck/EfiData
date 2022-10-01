@@ -5,12 +5,15 @@ using System.Data.SqlClient;
 namespace Clientes
 {
     public partial class Busqueda : Form
+
     {
 
         public Busqueda()
         {
             InitializeComponent();
         }
+
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -29,6 +32,9 @@ namespace Clientes
 
         private void button1_Click(object sender, EventArgs e)
         {
+            dgvlista.DataSource = ClienteDAL.BuscarClientes(txtRazonSocial.Text, txtRUC.Text);
+
+
 
             if (txtRazonSocial.Text + txtRUC.Text == "")
             {
@@ -83,9 +89,25 @@ namespace Clientes
         {
 
         }
-
+        public Clientes ClienteSeleccionado { get; set; }
         private void button2_Click(object sender, EventArgs e)
         {
+            if(dataGridView1.SelectedRows.Count==1)
+            {
+
+                Int32 Id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+                ClienteSeleccionado = ClienteDAL.ObtenerCliente(Id);
+                this.Close();
+            }
+            else
+            {
+
+                MessageBox.Show("No has seleccionado ningun cliente");
+
+            }
+            
+            
+            
             this.Close();
         }
 

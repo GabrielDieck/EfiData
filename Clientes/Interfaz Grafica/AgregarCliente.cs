@@ -97,5 +97,81 @@ namespace Clientes
             Principal principal = new Principal();
             principal.Show();
         }
+
+        private void txtrazonsocial_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+
+                txtruc.Focus();
+
+            }
+        }
+
+        private void txtruc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+
+                txtcelular.Focus();
+            }
+        }
+
+        private void txtcelular_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcelular_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcelular_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+
+                txtdireccion.Focus();
+            }
+        }
+
+        private void txtdireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+
+                Clientes Cliente = new Clientes();
+                Cliente.RazonSocial = txtrazonsocial.Text;
+                Cliente.Direccion = txtdireccion.Text;
+                Cliente.RUC = txtruc.Text;
+                Cliente.Telefono = txtcelular.Text;
+
+                int resultado = ClienteDAL.Agregar(Cliente);
+
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Datos Guardados Correctamente", "Datos Guardados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                else
+                {
+                    MessageBox.Show("No se pudo guardar los datos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+
+
+
+        }
+
+        private void txtModificar_Click(object sender, EventArgs e)
+        {
+            Clientes pCliente = new Clientes();
+            pCliente.RazonSocial = txtrazonsocial.Text;
+            pCliente.Direccion = txtdireccion.Text;
+            pCliente.RUC = txtruc.Text;
+            pCliente.Telefono = txtcelular.Text;
+
+        }
     }
 }

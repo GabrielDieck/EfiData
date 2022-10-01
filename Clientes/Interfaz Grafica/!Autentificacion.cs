@@ -11,9 +11,9 @@
         {
             if (UsuarioDAL.Autentificar(txtUsuario.Text, txtContraseña.Text) > 0)
             {
-                this.Hide();
-                RegisHot busqueda = new RegisHot();
-                busqueda.ShowDialog();
+
+                Principal menuprincipal = new Principal();
+                menuprincipal.ShowDialog();
                 this.Close();
             }
             else
@@ -41,9 +41,9 @@
             {
                 if (UsuarioDAL.Autentificar(txtUsuario.Text, txtContraseña.Text) > 0)
                 {
-                    this.Hide();
-                    RegisHot busqueda = new RegisHot();
-                    busqueda.ShowDialog();
+
+                    Principal menuprincipal = new Principal();
+                    menuprincipal.ShowDialog();
                     this.Close();
                 }
                 else
@@ -53,6 +53,14 @@
 
         }
 
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar==Convert.ToChar(Keys.Enter))
+            {
+                txtContraseña.Focus();
+
+            }
+        }
     }
 
 }

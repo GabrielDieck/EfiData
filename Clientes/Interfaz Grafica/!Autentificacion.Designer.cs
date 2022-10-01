@@ -66,6 +66,9 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(280, 23);
             this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.Enter += new System.EventHandler(this.txtContraseña_TextChanged);
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // label2
             // 
