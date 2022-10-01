@@ -1,13 +1,6 @@
-﻿using System.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Clientes.Conexion;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Clientes
 {
@@ -54,7 +47,7 @@ namespace Clientes
             else
             {
 
-                string query = "Select * from ListaClientes where RazonSocial = '"+txtRazonSocial.Text+ "' or RUC = '" +txtRUC.Text+"'";
+                string query = "Select * from ListaClientes where RazonSocial like '" + txtRazonSocial.Text + "' or RUC like '" + txtRUC.Text + "'";
                 SqlCommand comando = new SqlCommand(query, BDComun.ObtenerConexion());
                 SqlDataAdapter data = new SqlDataAdapter(comando);
                 DataTable tabla = new DataTable();
@@ -69,6 +62,20 @@ namespace Clientes
         }
         private void txtRazonSocial_TextChanged(object sender, EventArgs e)
         {
+
+            SqlConnection con = BDComun.ObtenerConexion();
+            String query = "select * from ListaClientes where RazonSocial like '" + txtRazonSocial.Text + "' or RUC like '"+ txtRUC.Text +"'";
+            SqlDataAdapter ada = new SqlDataAdapter(query, con);
+
+
+            DataSet data = new DataSet();
+
+            ada.Fill(data, "ListaClientes");
+
+            dgvlista.DataSource = data;
+            dgvlista.DataMember = "ListaClientes";
+            DataGridViewColumn Column = dgvlista.Columns["Id"];
+            Column.Visible = false;
 
         }
 

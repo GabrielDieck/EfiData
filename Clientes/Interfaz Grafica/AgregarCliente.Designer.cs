@@ -1,6 +1,6 @@
 ﻿namespace Clientes
 {
-    partial class Regis
+    partial class RegisHot
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regis));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisHot));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtrazonsocial = new System.Windows.Forms.TextBox();
+            this.txtruc = new System.Windows.Forms.TextBox();
             this.txtcelular = new System.Windows.Forms.TextBox();
             this.txtdireccion = new System.Windows.Forms.TextBox();
-            this.txtruc = new System.Windows.Forms.TextBox();
+            this.txtrazonsocial = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,13 +93,13 @@
             this.label4.Text = "RUC:*";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // txtrazonsocial
+            // txtruc
             // 
-            this.txtrazonsocial.Location = new System.Drawing.Point(180, 197);
-            this.txtrazonsocial.Name = "txtrazonsocial";
-            this.txtrazonsocial.Size = new System.Drawing.Size(240, 29);
-            this.txtrazonsocial.TabIndex = 4;
-            this.txtrazonsocial.TextChanged += new System.EventHandler(this.txtruc_TextChanged);
+            this.txtruc.Location = new System.Drawing.Point(180, 197);
+            this.txtruc.Name = "txtruc";
+            this.txtruc.Size = new System.Drawing.Size(240, 29);
+            this.txtruc.TabIndex = 4;
+            this.txtruc.TextChanged += new System.EventHandler(this.txtruc_TextChanged);
             // 
             // txtcelular
             // 
@@ -115,13 +116,14 @@
             this.txtdireccion.TabIndex = 6;
             this.txtdireccion.TextChanged += new System.EventHandler(this.txtdireccion_TextChanged);
             // 
-            // txtruc
+            // txtrazonsocial
             // 
-            this.txtruc.Location = new System.Drawing.Point(180, 147);
-            this.txtruc.Name = "txtruc";
-            this.txtruc.Size = new System.Drawing.Size(240, 29);
-            this.txtruc.TabIndex = 7;
-            this.txtruc.TextChanged += new System.EventHandler(this.txtrazonsocial_TextChanged);
+            this.txtrazonsocial.Location = new System.Drawing.Point(180, 147);
+            this.txtrazonsocial.Name = "txtrazonsocial";
+            this.txtrazonsocial.Size = new System.Drawing.Size(240, 29);
+            this.txtrazonsocial.TabIndex = 7;
+            this.txtrazonsocial.TextChanged += new System.EventHandler(this.txtrazonsocial_TextChanged);
+            this.txtrazonsocial.Enter += new System.EventHandler(this.Regis_Load);
             // 
             // label5
             // 
@@ -187,7 +189,17 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Regis
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(39, 108);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // RegisHot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,16 +209,17 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtruc);
+            this.Controls.Add(this.txtrazonsocial);
             this.Controls.Add(this.txtdireccion);
             this.Controls.Add(this.txtcelular);
-            this.Controls.Add(this.txtrazonsocial);
+            this.Controls.Add(this.txtruc);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -216,7 +229,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(500, 500);
             this.MinimumSize = new System.Drawing.Size(500, 500);
-            this.Name = "Regis";
+            this.Name = "RegisHot";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Clientes";
             this.Load += new System.EventHandler(this.Regis_Load);
@@ -231,15 +244,16 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox txtrazonsocial;
+        private TextBox txtruc;
         private TextBox txtcelular;
         private TextBox txtdireccion;
-        private TextBox txtruc;
+        private TextBox txtrazonsocial;
         private Label label5;
         private Button btnGuardar;
         private Button btnCerrar;
         private Label label6;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

@@ -1,8 +1,8 @@
 namespace Clientes
 {
-    public partial class Regis : Form
+    public partial class RegisHot : Form
     {
-        public Regis()
+        public RegisHot()
         {
             InitializeComponent();
         }
@@ -25,9 +25,9 @@ namespace Clientes
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             Clientes Cliente = new Clientes();
-            Cliente.RazonSocial = txtruc.Text;
+            Cliente.RazonSocial = txtrazonsocial.Text;
             Cliente.Direccion = txtdireccion.Text;
-            Cliente.RUC = txtrazonsocial.Text;
+            Cliente.RUC = txtruc.Text;
             Cliente.Telefono = txtcelular.Text;
 
             int resultado = ClienteDAL.Agregar(Cliente);
@@ -43,7 +43,12 @@ namespace Clientes
             }
         }
 
-        private void txtdireccion_TextChanged(object sender, EventArgs  e)
+        private void txtdireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void controlBotonRUC()
         {
 
         }
@@ -57,6 +62,8 @@ namespace Clientes
         {
             this.Close();
         }
+
+
 
         private void txtrazonsocial_TextChanged(object sender, EventArgs e)
         {
@@ -83,6 +90,12 @@ namespace Clientes
         private void Regis_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            principal.Show();
         }
     }
 }

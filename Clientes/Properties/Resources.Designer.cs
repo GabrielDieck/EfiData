@@ -63,6 +63,36 @@ namespace Clientes.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4562472 {
+            get {
+                object obj = ResourceManager.GetObject("4562472", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap efi_preview_rev_1 {
+            get {
+                object obj = ResourceManager.GetObject("efi_preview_rev_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EfiData_preview_rev_1 {
+            get {
+                object obj = ResourceManager.GetObject("EfiData_preview_rev_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallhaven_g8zj6l {
             get {
                 object obj = ResourceManager.GetObject("wallhaven-g8zj6l", resourceCulture);

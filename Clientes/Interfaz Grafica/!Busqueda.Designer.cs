@@ -1,4 +1,7 @@
-﻿namespace Clientes
+﻿using Clientes.Conexion;
+using System.Data.SqlClient;
+
+namespace Clientes
 {
     partial class Busqueda
     {
@@ -28,6 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Busqueda));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +42,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dgvlista = new System.Windows.Forms.DataGridView();
+            this.dataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteDALBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bDComunBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteDALBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteDALBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bDComunBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteDALBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -131,10 +143,16 @@
             this.dgvlista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvlista.Location = new System.Drawing.Point(300, 58);
             this.dgvlista.Name = "dgvlista";
+            this.dgvlista.ReadOnly = true;
             this.dgvlista.RowTemplate.Height = 25;
             this.dgvlista.Size = new System.Drawing.Size(460, 190);
             this.dgvlista.TabIndex = 10;
             this.dgvlista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // dataSetBindingSource
+            // 
+            this.dataSetBindingSource.DataSource = typeof(System.Data.DataSet);
+            this.dataSetBindingSource.Position = 0;
             // 
             // Busqueda
             // 
@@ -160,6 +178,10 @@
             this.Text = "Consulta de Clientes";
             this.Load += new System.EventHandler(this.Busqueda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteDALBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bDComunBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteDALBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +202,9 @@
         private DataGridView dataGridView1;
         private DataGridView dgvlista;
         private DataGridViewTextBoxColumn Column1;
+        private BindingSource bDComunBindingSource;
+        private BindingSource clienteDALBindingSource;
+        private BindingSource clienteDALBindingSource1;
+        private BindingSource dataSetBindingSource;
     }
 }

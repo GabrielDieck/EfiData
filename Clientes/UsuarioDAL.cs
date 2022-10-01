@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Clientes.Conexion;
 using System.Data.SqlClient;
 
 namespace Clientes
@@ -15,7 +11,7 @@ namespace Clientes
 
             int resultado = 0;
             SqlConnection connection = BDComun.ObtenerConexion();
-            SqlCommand Comando = new SqlCommand(string.Format("SET ANSI_WARNINGS OFF;Insert into Usuarios (Nombre, Contraseña) values ('{0}', PwdEncrypt('{1}') );SET ANSI_WARNINGS ON", pUsuario, pContraseña), connection);
+            SqlCommand Comando = new SqlCommand(string.Format("Insert into Usuarios (Nombre, Contraseña) values ('{0}', PwdEncrypt('{1}') )", pUsuario, pContraseña), connection);
 
             resultado = Comando.ExecuteNonQuery();
             connection.Close();
