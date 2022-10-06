@@ -10,18 +10,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EfiData", "EfiData\EfiData.vdproj", "{090CA8C6-A4AA-4006-A883-9DF14B6D4152}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Debug|x64.ActiveCfg = Debug|x86
-		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Debug|x86.ActiveCfg = Debug|x86
-		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Release|x64.ActiveCfg = Release|Any CPU
-		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Release|x86.ActiveCfg = Release|x86
+		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759C4213-850D-4AAD-8FF8-726FF69C8121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{090CA8C6-A4AA-4006-A883-9DF14B6D4152}.Debug|Any CPU.ActiveCfg = Debug
+		{090CA8C6-A4AA-4006-A883-9DF14B6D4152}.Debug|Any CPU.Build.0 = Debug
+		{090CA8C6-A4AA-4006-A883-9DF14B6D4152}.Release|Any CPU.ActiveCfg = Release
+		{090CA8C6-A4AA-4006-A883-9DF14B6D4152}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
