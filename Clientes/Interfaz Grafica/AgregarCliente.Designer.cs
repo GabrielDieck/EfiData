@@ -1,6 +1,6 @@
 ﻿namespace Clientes
 {
-    partial class RegisHot
+    partial class AgregarCliente
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisHot));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarCliente));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,12 +37,12 @@
             this.txtcelular = new System.Windows.Forms.TextBox();
             this.txtdireccion = new System.Windows.Forms.TextBox();
             this.txtrazonsocial = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtModificar = new System.Windows.Forms.Button();
-            this.txtEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -127,20 +127,7 @@
             this.txtrazonsocial.Size = new System.Drawing.Size(240, 29);
             this.txtrazonsocial.TabIndex = 7;
             this.txtrazonsocial.TextChanged += new System.EventHandler(this.txtrazonsocial_TextChanged);
-            this.txtrazonsocial.Enter += new System.EventHandler(this.Regis_Load);
             this.txtrazonsocial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtrazonsocial_KeyPress);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(10, 437);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(233, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Los campos que traen el * son requeridos";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnGuardar
             // 
@@ -174,28 +161,40 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Ingresa los datos del nuevo cliente";
             // 
-            // txtModificar
+            // btnModificar
             // 
-            this.txtModificar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtModificar.Location = new System.Drawing.Point(249, 409);
-            this.txtModificar.Name = "txtModificar";
-            this.txtModificar.Size = new System.Drawing.Size(100, 40);
-            this.txtModificar.TabIndex = 12;
-            this.txtModificar.Text = "Modificar";
-            this.txtModificar.UseVisualStyleBackColor = true;
-            this.txtModificar.Click += new System.EventHandler(this.txtModificar_Click);
+            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnModificar.Location = new System.Drawing.Point(249, 409);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(100, 40);
+            this.btnModificar.TabIndex = 12;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.txtModificar_Click);
             // 
-            // txtEliminar
+            // btnEliminar
             // 
-            this.txtEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtEliminar.Location = new System.Drawing.Point(372, 409);
-            this.txtEliminar.Name = "txtEliminar";
-            this.txtEliminar.Size = new System.Drawing.Size(100, 40);
-            this.txtEliminar.TabIndex = 13;
-            this.txtEliminar.Text = "Eliminar";
-            this.txtEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminar.Location = new System.Drawing.Point(372, 409);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(100, 40);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // RegisHot
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(10, 409);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 40);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Buscar/Modificar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // AgregarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -205,12 +204,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.txtEliminar);
-            this.Controls.Add(this.txtModificar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtrazonsocial);
             this.Controls.Add(this.txtdireccion);
             this.Controls.Add(this.txtcelular);
@@ -224,7 +223,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(500, 500);
             this.MinimumSize = new System.Drawing.Size(500, 500);
-            this.Name = "RegisHot";
+            this.Name = "AgregarCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Clientes";
             this.Load += new System.EventHandler(this.txtrazonsocial_TextChanged);
@@ -243,11 +242,11 @@
         private TextBox txtcelular;
         private TextBox txtdireccion;
         private TextBox txtrazonsocial;
-        private Label label5;
         private Button btnGuardar;
         private Button btnCerrar;
         private Label label6;
-        private Button txtModificar;
-        private Button txtEliminar;
+        private Button btnModificar;
+        private Button btnEliminar;
+        private Button button1;
     }
 }

@@ -29,6 +29,7 @@ namespace Clientes
 
                 SqlCommand comando = new SqlCommand(string.Format(
                     "Select Id, RazonSocial, Direccion, RUC, Telefono from ListaClientes where RazonSocial like '%{0}%' or RUC like '%{1}%'", pRazonSocial, pRUC), conexion);
+                
                 SqlDataReader reader = comando.ExecuteReader();
 
                 while (reader.Read())
@@ -57,7 +58,7 @@ namespace Clientes
 
                 Clientes pClientes = new Clientes();
                 SqlCommand comando = new SqlCommand(string.Format(
-                    "Select Id, RazonSocial, Direccion, RUC, Telefono from ListaClientes where Id={0]", pId), conexion);
+                    "Select Id, RazonSocial, Direccion, RUC, Telefono from ListaClientes where Id={0}", pId), conexion);
                 SqlDataReader reader = comando.ExecuteReader();
 
                 while (reader.Read())
@@ -75,21 +76,36 @@ namespace Clientes
             }
 
         }
+        public static int Modificar(Clientes pCliente)
+        {
+            int retorno = 0;
+            using (SqlConnection conexion = BDComun.ObtenerConexion())
+            {
 
+                SqlCommand comando = new SqlCommand(string.Format("Update ListaClientes set RazonSocial='{0}', Direccion='{1}', RUC='{2}', Telefono='{3}' where Id={4}",
+                    pCliente.RazonSocial, pCliente.Direccion, pCliente.RUC, pCliente.Telefono, pCliente.Id), conexion);
 
+                retorno = comando.ExecuteNonQuery();
+                conexion.Close();
+            }
+            return retorno;
+        }
 
+        public static int Eliminar (Int32 pId)
+        {
+            int retorno = 0;
+            using (SqlConnection conexion= BDComun.ObtenerConexion())
+            {
 
+                SqlCommand comando = new SqlCommand(string.Format("Delete from ListaClientes where Id={0}", pId), conexion);
+                retorno = comando.ExecuteNonQuery();
+                conexion.Close();
 
+            }
+            return retorno;
 
-
-
-
+        }
     }
-
-
-
-
-
 
 
 }

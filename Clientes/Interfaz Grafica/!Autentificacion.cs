@@ -15,6 +15,7 @@
                 Principal menuprincipal = new Principal();
                 menuprincipal.ShowDialog();
                 this.Close();
+
             }
             else
                 MessageBox.Show("Verifique los datos");
@@ -45,6 +46,7 @@
                     Principal menuprincipal = new Principal();
                     menuprincipal.ShowDialog();
                     this.Close();
+
                 }
                 else
                     MessageBox.Show("Verifique los datos");

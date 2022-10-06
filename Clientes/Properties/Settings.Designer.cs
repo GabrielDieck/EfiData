@@ -23,15 +23,6 @@ namespace Clientes.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.20;Initial Catalog=BDClientes;Persist Security Info=True;Us" +
-            "er ID=Comun;Password=password")]
-        public string conexion {
-            get {
-                return ((string)(this["conexion"]));
-            }
-        }
+
     }
 }

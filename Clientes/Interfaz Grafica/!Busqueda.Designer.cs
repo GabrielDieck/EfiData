@@ -39,7 +39,7 @@ namespace Clientes
             this.txtRazonSocial = new System.Windows.Forms.TextBox();
             this.txtRUC = new System.Windows.Forms.TextBox();
             this.btnbusqueda = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dgvlista = new System.Windows.Forms.DataGridView();
             this.dataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -115,17 +115,17 @@ namespace Clientes
             this.btnbusqueda.UseVisualStyleBackColor = true;
             this.btnbusqueda.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnAceptar
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(16, 222);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 29);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Aceptar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnAceptar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAceptar.Location = new System.Drawing.Point(16, 222);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(86, 29);
+            this.btnAceptar.TabIndex = 8;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -163,7 +163,7 @@ namespace Clientes
             this.ClientSize = new System.Drawing.Size(784, 261);
             this.Controls.Add(this.dgvlista);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnbusqueda);
             this.Controls.Add(this.txtRUC);
             this.Controls.Add(this.txtRazonSocial);
@@ -197,7 +197,7 @@ namespace Clientes
         private TextBox txtRUC;
         private TextBox txttelefono;
         private Button btnbusqueda;
-        private Button button2;
+        private Button btnAceptar;
         private Button button3;
         private DataGridView dataGridView1;
         private DataGridView dgvlista;

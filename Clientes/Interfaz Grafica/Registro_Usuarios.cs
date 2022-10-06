@@ -40,17 +40,38 @@
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
 
-            if (txtContraseña.Text == txtConfirmar.Text)
+            if (txtContraseña.Text == "")
+            {
+                MessageBox.Show("Por favor agregue una Contraseña!");
+            }
+            else
             {
 
-                if (UsuarioDAL.CrearCuentas(txtUsuario.Text, txtContraseña.Text) > 0)
+                if (txtUsuario.Text == "")
                 {
-                    MessageBox.Show("Usuario registrado Exitosamente!");
+                    MessageBox.Show("Agregue un nombre de usuario por favor");
                 }
                 else
-                    MessageBox.Show("Error al registrar al usuario, Verifique los datos.");
+                {
+
+                    if (txtContraseña.Text == txtConfirmar.Text)
+                    {
+
+                        if (UsuarioDAL.CrearCuentas(txtUsuario.Text, txtContraseña.Text) > 0)
+                        {
+                            MessageBox.Show("Usuario registrado Exitosamente!");
+                        }
+                        else
+                            MessageBox.Show("Error al registrar al usuario, Verifique los datos.");
+
+                    }
+
+                }
 
             }
+            
+
+            
 
         }
 

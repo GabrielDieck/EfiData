@@ -14,9 +14,9 @@
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Autentificacion auten = new Autentificacion();
             auten.Show();
+            this.Close();
 
         }
 
@@ -37,9 +37,15 @@
 
         private void crearNuevoClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegisHot regisrico = new RegisHot();
-            regisrico.Show();
+            AgregarCliente AgregarCliente = new AgregarCliente();
+            AgregarCliente.Show();
+            
            
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
