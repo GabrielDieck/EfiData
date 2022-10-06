@@ -8,10 +8,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Platforms>AnyCPU;x64;x86</Platforms>
     <StartupObject>Clientes.Program</StartupObject>
+    <ApplicationIcon>EfiData_preview_rev_1.ico</ApplicationIcon>
+    <IsPublishable>False</IsPublishable>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Interface1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="EfiData_preview_rev_1.ico" />
   </ItemGroup>
 
   <ItemGroup>

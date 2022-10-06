@@ -1,12 +1,21 @@
 ﻿using System.Data.SqlClient;
+using Clientes.Properties;
+using System.Configuration;
 
 namespace Clientes.Conexion
 {
     public class BDComun
     {
+        public static string ObtenerString()
+        {
+
+            return Settings.Default.conexion;
+
+        }
+
         public static SqlConnection ObtenerConexion()
         {
-            SqlConnection conn = new SqlConnection("Data source=192.168.0.20; Initial Catalog=BDClientes; User Id=Comun; Password=password");
+            SqlConnection conn = new SqlConnection(ObtenerString());
             conn.Open();
 
             return conn;
