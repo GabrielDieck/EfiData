@@ -73,6 +73,36 @@ namespace Clientes.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Autentificacion {
+            get {
+                object obj = ResourceManager.GetObject("Autentificacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Autentificacion1 {
+            get {
+                object obj = ResourceManager.GetObject("Autentificacion1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Busqueda {
+            get {
+                object obj = ResourceManager.GetObject("Busqueda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap efi_preview_rev_1 {
             get {
                 object obj = ResourceManager.GetObject("efi_preview_rev_1", resourceCulture);
@@ -86,6 +116,36 @@ namespace Clientes.Properties {
         internal static System.Drawing.Bitmap EfiData_preview_rev_1 {
             get {
                 object obj = ResourceManager.GetObject("EfiData_preview_rev_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Principal {
+            get {
+                object obj = ResourceManager.GetObject("Principal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Principal1 {
+            get {
+                object obj = ResourceManager.GetObject("Principal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Principal2 {
+            get {
+                object obj = ResourceManager.GetObject("Principal2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

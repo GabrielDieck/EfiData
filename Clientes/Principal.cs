@@ -1,7 +1,11 @@
-﻿namespace Clientes
+﻿using System.Windows.Forms;
+using System.Web;
+
+namespace Clientes
 {
     public partial class Principal : Form
     {
+
         public Principal()
         {
             InitializeComponent();
@@ -44,6 +48,62 @@
         }
 
         private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Example_Click(object sender, EventArgs e)
+        {
+            AgregarCliente agregar = new AgregarCliente();
+            agregar.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Registro_Usuarios usuarios = new Registro_Usuarios();
+            usuarios.ShowDialog();
+        }
+
+        private void fotoExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void fotoCrear_Click(object sender, EventArgs e)
+        {
+            AgregarCliente agregar = new AgregarCliente();
+            agregar.ShowDialog();
+        }
+
+        private void fotoConsultar_Click(object sender, EventArgs e)
+        {
+            Busqueda busqueda = new Busqueda();
+            busqueda.ShowDialog();
+        }
+
+        private void fotoUsuario_Click(object sender, EventArgs e)
+        {
+            Registro_Usuarios usuarios = new Registro_Usuarios();
+            usuarios.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Busqueda busqueda = new Busqueda();
+            busqueda.ShowDialog();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

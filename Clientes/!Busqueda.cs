@@ -122,5 +122,10 @@ namespace Clientes
         {
             this.Close();
         }
+
+        private void clienteDALBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
