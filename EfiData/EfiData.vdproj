@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_52BE226F87884C9C927DA02A3A44AB71"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8D5774DB91E243788C52A1F9334E957B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -58,6 +64,11 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5.2 (x86 y x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5.2"
+                    }
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
                     {
                     "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 y x64)"
@@ -148,6 +159,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_52BE226F87884C9C927DA02A3A44AB71"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\Desktop\\Script BD.sql"
+            "TargetName" = "8:Script BD.sql"
+            "Tag" = "8:"
+            "Folder" = "8:_EDCE1B48EED44B69AFE8F8DC1BD37D63"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8D5774DB91E243788C52A1F9334E957B"
             {
             "SourcePath" = "8:..\\..\\..\\..\\Pictures\\New folder\\EfiData_preview_rev_1.png"
@@ -245,7 +276,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EfiData"
         "ProductCode" = "8:{9934EC3F-99A5-4436-B269-92F262AFA061}"
-        "PackageCode" = "8:{85C2CA52-0D42-46C5-B7EC-D6E846D81306}"
+        "PackageCode" = "8:{C1287356-EC12-4181-A5D5-C7022BBBA3D3}"
         "UpgradeCode" = "8:{2C830316-5FF1-4FBE-975E-F7E5D69A793B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -794,7 +825,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9D1B6AEB09044978B0BE1A0C6592832A"
             {
-            "SourcePath" = "8:..\\Clientes\\obj\\Release\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\Clientes\\obj\\x86\\Debug\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_EDCE1B48EED44B69AFE8F8DC1BD37D63"

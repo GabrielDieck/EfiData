@@ -10,7 +10,20 @@
     <StartupObject>Clientes.Program</StartupObject>
     <ApplicationIcon>EfiData_preview_rev_1.ico</ApplicationIcon>
     <IsPublishable>False</IsPublishable>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseOutputPath>C:\Users\gabri\source\repos\Efidata\Clientes\bin</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
