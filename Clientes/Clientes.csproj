@@ -12,18 +12,19 @@
     <IsPublishable>False</IsPublishable>
     <PlatformTarget>x86</PlatformTarget>
     <BaseOutputPath>C:\Users\gabri\source\repos\Efidata\Clientes\bin</BaseOutputPath>
+    <Configurations>Debug;Release;iuhuh</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <Optimize>True</Optimize>
+    <Optimize>False</Optimize>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Optimize>True</Optimize>
+    <Optimize>False</Optimize>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <Optimize>True</Optimize>
+    <Optimize>False</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
